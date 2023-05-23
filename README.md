@@ -24,3 +24,18 @@ To include this in your repo:
 1) Generate a personal access token with access to gists under profile/developer settings
 2) Create an action secret in your repo called `GIST_SECRET` with that token
 3) Copy the workflow
+
+# Option 2: Storing SVG
+
+![master SHA](https://github.com/cau777/sha-badge-action/blob/shields-badges/master-sha.svg)
+![canary SHA](https://github.com/cau777/sha-badge-action/blob/shields-badges/canary-sha.svg)
+![production SHA](https://github.com/cau777/sha-badge-action/blob/shields-badges/production-sha.svg)
+
+Credit on **emibcn/badge-action** for most of the logic.
+For this option, the SVGs are stored in a branch in the same repo. This makes it more
+suitable for private repos.
+
+### Usage
+To include this in your repo:
+1) Create an empty orphan branch called `shields-badges` 
+2) Copy the workflow
