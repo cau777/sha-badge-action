@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - id: payload
         run: |
           echo "short_hash=$(git rev-parse --short $GITHUB_SHA)" >> $GITHUB_OUTPUT
-          echo "short_hash=$(git rev-parse --short $GITHUB_SHA)"
 
       - name: SHA badge
         uses: RubbaBoy/BYOB@v1.3.0
