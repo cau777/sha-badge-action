@@ -33,7 +33,7 @@ To include this in your repo:
 
 Credit on **emibcn/badge-action** for most of the logic.
 For this option, the SVGs are stored in a branch in the same repo. This makes it more
-suitable for private repos.
+suitable for private repos with security concerns.
 
 ### Usage
 To include this in your repo:
