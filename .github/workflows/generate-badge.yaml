@@ -13,13 +13,14 @@ jobs:
       - id: payload
         run: |
           echo "short_hash=$(git rev-parse --short $GITHUB_SHA)" >> $GITHUB_OUTPUT
+          echo "short_hash=$(git rev-parse --short $GITHUB_SHA)"
 
-      - name: Time badge
+      - name: SHA badge
         uses: RubbaBoy/BYOB@v1.3.0
         with:
           NAME: ${{ github.ref_name }}-sha
           LABEL: SHA
           STATUS: ${{ steps.payload.outputs.short_hash }}
           COLOR: 00EEFF
-          GITHUB_TOKEN: ${{ secrets.ACESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: shields-badges
