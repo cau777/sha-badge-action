@@ -7,6 +7,7 @@
 This repo contains a simple GitHub Actions workflow that computes the short hash for a given branch and generates a badge with it.
 This is useful to quickly check what branch is currently deployed. To make it more realistic, the repo has 3 branches
 (master, canary and production) with some sample data to make the hashes different.
+Credit on **schneegans/dynamic-badges-action** for most of the logic.
 
 #### Hosting the hashes
 
