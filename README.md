@@ -3,13 +3,14 @@
 This repo contains a simple GitHub Actions workflow that computes the short hash for a given branch and generates a badge with it.
 This is useful to quickly check what branch is currently deployed. To make it more realistic, the repo has 3 branches
 (master, canary and production) with some sample data to make the hashes different.
-Credit on **schneegans/dynamic-badges-action** for most of the logic.
 
 # Option 1: Storing the hashes
 
 ![master SHA](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/cau777/63a20a64c3d5ea1ef487b04c75629f29/raw/master-sha.json)
 ![canary SHA](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/cau777/63a20a64c3d5ea1ef487b04c75629f29/raw/canary-sha.json)
 ![production SHA](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/cau777/63a20a64c3d5ea1ef487b04c75629f29/raw/production-sha.json)
+
+Credit on **schneegans/dynamic-badges-action** for most of the logic.
 
 #### Hosting the hashes
 
