@@ -1,0 +1,29 @@
+name: Generate SHA badge
+on:
+  push:
+    branches:
+      - master
+      - production
+      - canary
+jobs:
+  badge_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Compute Payload
+        id: payload
+        run: |
+          echo "short_hash=$(git rev-parse --short $GITHUB_SHA)" >> $GITHUB_OUTPUT
+
+      - name: Create Badge
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 63a20a64c3d5ea1ef487b04c75629f29
+          filename: ${{ github.ref_name }}-sha.json
+          label: ${{ github.ref_name }} SHA
+          message: ${{ steps.payload.outputs.short_hash }}
+          color: blue
