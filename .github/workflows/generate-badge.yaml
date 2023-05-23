@@ -21,5 +21,5 @@ jobs:
           LABEL: SHA
           STATUS: ${{ steps.payload.outputs.short_hash }}
           COLOR: 00EEFF
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACESS_TOKEN }}
           BRANCH: shields-badges
