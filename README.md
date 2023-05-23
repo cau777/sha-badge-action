@@ -19,5 +19,5 @@ probably don't want to distribute access tokens everywhere).
 
 To include this in your repo:
 1) Generate a personal access token with access to gists under profile/developer settings
-2) Create an action secret in your repo called 'GIST_SECRET' with that token
+2) Create an action secret in your repo called `GIST_SECRET` with that token
 3) Copy the workflow
