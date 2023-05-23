@@ -1,0 +1,1 @@
+![](https://byob.yarr.is/cau777/sha-badge-action/master-sha)
