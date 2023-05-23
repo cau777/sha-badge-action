@@ -30,6 +30,8 @@ jobs:
 
       - name: Commit Badge
         run: |
+          git config --global user.email "sha-badge-bot@github.com"
+          git config --global user.name "SHA badge bot"
           git add .
           git commit -m "Add/Update ${{ github.ref_name }}-sha.svg"
           git push origin shields-badges
