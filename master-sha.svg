@@ -1,20 +1,20 @@
-<svg width="135" height="20" viewBox="0 0 1350 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="master SHA: 70b5896">
-  <title>master SHA: 70b5896</title>
+<svg width="128.5" height="20" viewBox="0 0 1285 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="master SHA: 4f789af">
+  <title>master SHA: 4f789af</title>
   <linearGradient id="a" x2="0" y2="100%">
     <stop offset="0" stop-opacity=".1" stop-color="#EEE"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
-  <mask id="m"><rect width="1350" height="200" rx="30" fill="#FFF"/></mask>
+  <mask id="m"><rect width="1285" height="200" rx="30" fill="#FFF"/></mask>
   <g mask="url(#m)">
     <rect width="761" height="200" fill="#555"/>
-    <rect width="589" height="200" fill="#08C" x="761"/>
-    <rect width="1350" height="200" fill="url(#a)"/>
+    <rect width="524" height="200" fill="#08C" x="761"/>
+    <rect width="1285" height="200" fill="url(#a)"/>
   </g>
   <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
     <text x="60" y="148" textLength="661" fill="#000" opacity="0.25">master SHA</text>
     <text x="50" y="138" textLength="661">master SHA</text>
-    <text x="816" y="148" textLength="489" fill="#000" opacity="0.25">70b5896</text>
-    <text x="806" y="138" textLength="489">70b5896</text>
+    <text x="816" y="148" textLength="424" fill="#000" opacity="0.25">4f789af</text>
+    <text x="806" y="138" textLength="424">4f789af</text>
   </g>
   
 </svg>
