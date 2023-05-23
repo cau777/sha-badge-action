@@ -24,6 +24,6 @@ jobs:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 63a20a64c3d5ea1ef487b04c75629f29
           filename: ${{ github.ref_name }}-sha.json
-          label: SHA
+          label: ${{ github.ref_name }} SHA
           message: ${{ steps.payload.outputs.short_hash }}
           color: blue

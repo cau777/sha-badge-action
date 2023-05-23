@@ -1,1 +1,3 @@
-![](https://byob.yarr.is/cau777/sha-badge-action/master-sha)
+![master SHA](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/cau777/63a20a64c3d5ea1ef487b04c75629f29/raw/master-sha.json)
+![canary SHA](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/cau777/63a20a64c3d5ea1ef487b04c75629f29/raw/canary-sha.json)
+![production SHA](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/cau777/63a20a64c3d5ea1ef487b04c75629f29/raw/production-sha.json)
