@@ -29,6 +29,12 @@ jobs:
           path: ${{ github.ref_name }}-sha.svg
 
       - name: Commit Badge
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: Add/Update ${{ github.ref_name }}-sha.svg
+        run: |
+          git add .
+          git commit -m "Add/Update ${{ github.ref_name }}-sha.svg"
+          git push origin shields-badges
+
+#      - name: Commit Badge
+#        uses: EndBug/add-and-commit@v9
+#        with:
+#          message: Add/Update ${{ github.ref_name }}-sha.svg
