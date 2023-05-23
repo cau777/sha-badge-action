@@ -19,7 +19,6 @@ jobs:
         id: payload
         run: |
           echo "short_hash=$(git rev-parse --short $GITHUB_SHA)" >> $GITHUB_OUTPUT
-          echo "short_hash=$(git rev-parse --short $GITHUB_SHA)"
 
       - name: Create Badge
         uses: emibcn/badge-action@v2.0.2
