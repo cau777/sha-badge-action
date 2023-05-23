@@ -28,15 +28,15 @@ jobs:
           color: blue
           path: ${{ github.ref_name }}-sha.svg
 
-      - name: Commit Badge
-        run: |
-          git config --global user.email "sha-badge-bot@github.com"
-          git config --global user.name "SHA badge bot"
-          git add .
-          git commit -m "Add/Update ${{ github.ref_name }}-sha.svg"
-          git push origin shields-badges
-
 #      - name: Commit Badge
-#        uses: EndBug/add-and-commit@v9
-#        with:
-#          message: Add/Update ${{ github.ref_name }}-sha.svg
+#        run: |
+#          git config --global user.email "sha-badge-bot@github.com"
+#          git config --global user.name "SHA badge bot"
+#          git add .
+#          git commit -m "Add/Update ${{ github.ref_name }}-sha.svg"
+#          git push origin shields-badges
+
+      - name: Commit Badge
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: Add/Update ${{ github.ref_name }}-sha.svg
