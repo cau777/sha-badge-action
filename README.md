@@ -1,6 +1,6 @@
 # SHA Badge Action
 
-This repo contains a simple GitHub Actions workflow that computes the short hash for a given branch and generates a badge with it.
+This repo contains 2 simple GitHub Actions workflows that compute the short hash for a given branch and generate a badge with it.
 This is useful to quickly check what branch is currently deployed. To make it more realistic, the repo has 3 branches
 (master, canary and production) with some sample data to make the hashes different.
 
